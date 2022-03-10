@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 Steps to reproduce for running the application:
+### `Clone the application in your local`
 ### `npm install`
 ### `npm start`
 
