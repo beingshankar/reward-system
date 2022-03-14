@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import RewardsTable from './Components/RewardsTable.js';
-import columns from './models/columns';
-import totalsByColumns from './models/totalsByColumns';
-import fetch from './db/dbService.js';
 import { calculateRewards } from './Utils/calculateRewards.js';
+import columns from './models/columns';
+import fetch from './db/dbService.js';
+import totalsByColumns from './models/totalsByColumns';
 import "./App.css";
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
     });
   },[]);
 
-  return transactionData == null
+  return transactionData === null
       ?
     <div>Loading...</div>
       :
@@ -36,14 +36,12 @@ function App() {
         data={transactionData.summaryByCustomer}
         pointsPerTransaction={transactionData.pointsPerTransaction}
         slotContent={true}
-        pageSize={5}
       />
       <RewardsTable
         title={'Points Rewards System Totals by Customer'}
         data={transactionData.totalPointsByCustomer}
         columns={totalsByColumns}
         pointsPerTransaction={transactionData.pointsPerTransaction}
-        pageSize={5}
       />
     </div>
 }
