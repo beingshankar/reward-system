@@ -21,7 +21,7 @@ function App() {
       }
     })
     .catch(error => {
-      setTransactionData([])
+      setTransactionData(null)
     });
   },[]);
 
