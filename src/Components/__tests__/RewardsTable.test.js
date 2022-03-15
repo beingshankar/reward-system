@@ -1,4 +1,4 @@
-import {render } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import RewardsTable from '../RewardsTable';
 import { calculateRewards } from '../../Utils/calculateRewards';
 import React from 'react';
