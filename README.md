@@ -9,6 +9,9 @@ Steps to reproduce for running the application:
 ### `npm install`
 ### `npm start`
 
+Command to run unit tests:
+### `npm test`
+
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
